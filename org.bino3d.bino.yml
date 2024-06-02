@@ -1,6 +1,6 @@
 app-id: org.bino3d.bino
 runtime: org.kde.Platform
-runtime-version: '6.4'
+runtime-version: '6.7'
 sdk: org.kde.Sdk
 command: bino
 finish-args:
@@ -28,8 +28,8 @@ modules:
       - -DCMAKE_BUILD_TYPE=Release
     sources:
       - type: archive
-        url: https://github.com/ValveSoftware/openvr/archive/refs/tags/v1.14.15.tar.gz
-        sha256: 40644e569f057e86c733d818a22d821c640307e5058d95958414422134d79584
+	url: https://github.com/ValveSoftware/openvr/archive/refs/tags/v2.5.1.tar.gz
+        sha256: 54f654fce001682d8ac608f544a6c41e03a672b005c1deca3579fa36480a537c
     cleanup:
       - '/share/pkgconfig'
   - name: vrpn
@@ -53,13 +53,13 @@ modules:
       - -DCMAKE_BUILD_TYPE=Release
     sources:
       - type: archive
-        url: https://marlam.de/qvr/releases/qvr-4.0.1.tar.gz
-        sha256: eebca73cab2799bd48d800f606896e68128cc04faff72a374349c0b5901f1ac0
+        url: https://marlam.de/qvr/releases/qvr-4.0.2.tar.gz
+        sha256: e9a0beafd37ffcbe245f479e50b024a779945e332ad49d61f6e9c9c2144e9dc7
   - name: bino
     buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
     sources:
       - type: archive
-        url: https://bino3d.org/releases/bino-2.1.tar.gz
-        sha256: dcbca06611df566ae97ec06d644d60376573b6b5d79b3cc7cc3f45fbbb3d4bf7
+        url: https://bino3d.org/releases/bino-2.2.tar.gz
+        sha256: 84597403202ba720560c7f3a34b9aa15b58f3a071eee863b83888db06e9b304a
