@@ -28,7 +28,7 @@ modules:
       - -DCMAKE_BUILD_TYPE=Release
     sources:
       - type: archive
-	url: https://github.com/ValveSoftware/openvr/archive/refs/tags/v2.5.1.tar.gz
+        url: https://github.com/ValveSoftware/openvr/archive/refs/tags/v2.5.1.tar.gz
         sha256: 54f654fce001682d8ac608f544a6c41e03a672b005c1deca3579fa36480a537c
     cleanup:
       - '/share/pkgconfig'
