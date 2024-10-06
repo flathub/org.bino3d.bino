@@ -17,9 +17,6 @@ finish-args:
   - --socket=pulseaudio
   # Play video files, but only read access required
   - --filesystem=host:ro
-  # Some media files need to be converted before they can be played,
-  # so we need write access to the cache directory to store conversion results
-  - --filesystem=xdg-cache:create
 cleanup:
   - '/include'
   - '/lib/*.a'
