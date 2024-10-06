@@ -17,6 +17,9 @@ finish-args:
   - --socket=pulseaudio
   # Play video files, but only read access required
   - --filesystem=host:ro
+  # Some media files need to be converted before they can be played,
+  # so we need write access to the cache directory to store conversion results
+  - --filesystem=xdg-cache:create
 cleanup:
   - '/include'
   - '/lib/*.a'
@@ -53,15 +56,13 @@ modules:
       - -DCMAKE_BUILD_TYPE=Release
     sources:
       - type: archive
-        url: https://marlam.de/qvr/releases/qvr-4.0.2.tar.gz
-        sha256: e9a0beafd37ffcbe245f479e50b024a779945e332ad49d61f6e9c9c2144e9dc7
+        url: https://marlam.de/qvr/releases/qvr-4.1.0.tar.gz
+        sha256: e6f83f89da8dccdc7dfedf726d2ee742336668549599a74574df928b162b1d53
   - name: bino
     buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
     sources:
       - type: archive
-        url: https://bino3d.org/releases/bino-2.2.tar.gz
-        sha256: 84597403202ba720560c7f3a34b9aa15b58f3a071eee863b83888db06e9b304a
-      - type: patch
-        path: update-metainfo.patch
+        url: https://bino3d.org/releases/bino-2.3.tar.gz
+        sha256: 60cba230f8019363d13553adbc516f4a916c55bb3b5416f212a69b8c04f9b130
