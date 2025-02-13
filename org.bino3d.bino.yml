@@ -1,6 +1,6 @@
 app-id: org.bino3d.bino
 runtime: org.kde.Platform
-runtime-version: '6.7'
+runtime-version: '6.8'
 sdk: org.kde.Sdk
 command: bino
 finish-args:
@@ -61,5 +61,5 @@ modules:
       - -DCMAKE_BUILD_TYPE=Release
     sources:
       - type: archive
-        url: https://bino3d.org/releases/bino-2.3.tar.gz
-        sha256: 60cba230f8019363d13553adbc516f4a916c55bb3b5416f212a69b8c04f9b130
+        url: https://bino3d.org/releases/bino-2.4.tar.gz
+        sha256: dbf3cb3293201a4a64bc789963ab5a63517ca23bf057048521a190caaa937fb6
