@@ -61,5 +61,5 @@ modules:
       - -DCMAKE_BUILD_TYPE=Release
     sources:
       - type: archive
-        url: https://bino3d.org/releases/bino-2.4.tar.gz
-        sha256: dbf3cb3293201a4a64bc789963ab5a63517ca23bf057048521a190caaa937fb6
+        url: https://bino3d.org/releases/bino-2.5.tar.gz
+        sha256: 791edd5cb8c59f0177ad454edce05cbfbcc7df1a447280f69048af3d149c26d7
