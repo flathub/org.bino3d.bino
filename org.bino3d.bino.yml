@@ -1,6 +1,6 @@
 app-id: org.bino3d.bino
 runtime: org.kde.Platform
-runtime-version: '6.10'
+runtime-version: '6.11'
 sdk: org.kde.Sdk
 command: bino
 finish-args:
@@ -28,8 +28,8 @@ modules:
       - -DCMAKE_BUILD_TYPE=Release
     sources:
       - type: archive
-        url: https://github.com/ValveSoftware/openvr/archive/refs/tags/v2.12.14.tar.gz
-        sha256: becc2e6b956d1b98d66e2cc75fd8b20db94eb5af584ec360a4dad7e8adec3176
+        url: https://github.com/ValveSoftware/openvr/archive/refs/tags/v2.15.6.tar.gz
+        sha256: e184cb625010fab7043a9d5e1e000fdeb3067a152bb3169ef53f64dfac37164c
     cleanup:
       - '/share/pkgconfig'
   - name: vrpn
@@ -61,7 +61,5 @@ modules:
       - -DCMAKE_BUILD_TYPE=Release
     sources:
       - type: archive
-        url: https://bino3d.org/releases/bino-2.7.tar.gz
-        sha256: cdc7a7d970f0771b9b34c2f5b1ee75c570986552fb90d3f972723036cf2f0b03
-      - type: patch
-        path: metainfo.patch
+        url: https://bino3d.org/releases/bino-2.8.tar.gz
+        sha256: 464c2ca8746d9339ed99f5499f10013efe5c45503cb8338f3371e8f3a633416f
